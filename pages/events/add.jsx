@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import styles from '@/styles/Form.module.css'
 
-export default function AddPage() {
+export default function AddEventPage() {
   const [values, setValues] = useState({
     name: '',
     performers: '',
