@@ -6,29 +6,39 @@
 
 [VIEW DEMO]()
 
-# Usage
+## What I learned on this project:
 
-### Setup Backend
+    Pages & Routing
+
+    Data Fetching Methods - getServerSideProps, getStaticProps, getStaticPaths
+
+    Custom API Routes
+
+    Static Generation
+
+    CSS Styling
+
+    Image Optimization
+
+## I worked with:
+
+    Strapi CMS
+
+    Authentication with JWT (JSON Web Tokens)
+
+    Authorization and access control
+
+    Storing HttpOnly Cookies on the server
+
+    Pagination, search filters, etc
+
+    Image uploading with Cloudinary integration
+
+    Deploying to Vercel and Heroku
+
+
+### Backend
 
 The Strapi backend can be found [here](https://github.com/MagicPojska/next-dj-events-backend)
 
 Clone the repo above and run your backend
-
-### Maps
-
-Create a .env.local file and add your Mapbox and Google API keys
-
-```
-NEXT_PUBLIC_MAPBOX_API_TOKEN = "xxxxx"
-NEXT_PUBLIC_GOOGLE_MAP_API_KEY = "xxxxx"
-```
-
-### Run the Server
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
