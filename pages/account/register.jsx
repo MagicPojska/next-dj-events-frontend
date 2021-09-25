@@ -55,7 +55,7 @@ export default function RegisterPage() {
                 </form>
 
                 <p>
-                    Already have an account? <Link href='/account/login'>Login</Link>
+                    Already have an account? <Link href='/account/login'>Register</Link>
                 </p>
             </div>
         </Layout>
