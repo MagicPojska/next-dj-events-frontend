@@ -8,14 +8,32 @@ export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [error, setError] = useState(null);
 
+    useEffect(() => checkUserLoggedIn(), []);
+
     const router = useRouter();
 
     //Register user
     const register = async (user) => {
-        console.log(user)
+        const res = await fetch(`${NEXT_URL}/api/register`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+        const data = await res.json();
+
+        console.log(data)
+
+        if (res.ok) {
+            setUser(data.user);
+            router.push('/account/dashboard')
+        } else {
+            setError(data.message)
+            setError(null);
+        }
     }
 
-    useEffect(() => checkUserLoggedIn(), []);
 
     //Login user
     const login = async ({ email: identifier, password }) => {
