@@ -2,9 +2,9 @@
 
 > Next.js website for DJ Events. This site uses Strapi as a backend. The repo for that is below
 
-![DJ Events](/public/images/screen.png 'DJ Events')
+![DJ Events](/public/images/screen.png "DJ Events")
 
-[VIEW DEMO]()
+[VIEW DEMO](https://next-events-project.vercel.app/)
 
 ## What I learned on this project:
 
@@ -35,7 +35,6 @@
     Image uploading with Cloudinary integration
 
     Deploying to Vercel and Heroku
-
 
 ### Backend
 
