@@ -8,7 +8,7 @@ export default function Modal({ show, onClose, children, title }) {
 
     useEffect(() => {
         setIsBrowser(true)
-    })
+    }, [])
 
     const handleClose = (e) => {
         e.preventDefault()
